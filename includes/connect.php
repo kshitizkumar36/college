@@ -1,12 +1,15 @@
 <?php
+
+echo"this is kshitiz"; die;
 session_start();
 $host = "localhost";
 $user = "root";
 $password = ""; // Add an empty string here if there’s no password
 $dbname = "blog";
-
 // Correcting the mysqli connection syntax
 $connect = mysqli_connect($host, $user, $password, $dbname);
+
+
 
 // Checking the mysqli connection
 if (!$connect) {
